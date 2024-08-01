@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "989095084424",
+    "project_id": "smapp-92292",
+    "storage_bucket": "smapp-92292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989095084424:android:6580bc00bc0c4b4f9cfa3d",
+        "android_client_info": {
+          "package_name": "com.example.smapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989095084424-1l5h5c4boc0gvms0k4g8h26tdp1gp3hd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTw-fmYvAKmHKAh2Ccw-1iSoE_Kw-0HZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989095084424-1l5h5c4boc0gvms0k4g8h26tdp1gp3hd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

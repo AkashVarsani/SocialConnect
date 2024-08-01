@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Change Profile"
+        android:id="@+id/changeProfile"
+       />
+    <item android:title="Change Cover"
+        android:id="@+id/changeCover"
+      />
+
+    <item android:title="Change Name"
+        android:id="@+id/changeName"
+      />
+
+    <item android:title="Change Profession"
+        android:id="@+id/changeProfession"
+      />
+
+    <item android:title="Sign Out"
+        android:id="@+id/signOut"
+      />
+</menu>

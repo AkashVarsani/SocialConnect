@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_4mdp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/postImg"
+        android:layout_width="@dimen/_133mdp"
+        android:layout_height="@dimen/_85mdp"
+
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="@dimen/_8mdp"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="@dimen/_4mdp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="@+id/postImg"
+        app:layout_constraintTop_toTopOf="@+id/postImg" />
+
+    <ImageView
+        android:id="@+id/storyType"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/story_type_bg"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="@+id/postImg"
+        app:layout_constraintTop_toTopOf="@+id/postImg"
+        app:srcCompat="@drawable/live" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="4dp"
+
+        android:text="Akash Varsani"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/postImg"
+        app:layout_constraintStart_toStartOf="@+id/postImg" />
+
+    <com.devlomi.circularstatusview.CircularStatusView
+        android:id="@+id/statusCircle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+
+        app:layout_constraintTop_toTopOf="@+id/profile"
+        app:portion_color="#FB5C07"
+        app:portion_spacing="6dp"
+        app:portion_width="2dp"
+        app:portions_count="3"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

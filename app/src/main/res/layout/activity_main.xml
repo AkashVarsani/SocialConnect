@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_cons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+    </FrameLayout>
+
+
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/nav_cons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:padding="12dp"
+        app:bnc_mode="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/i1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+
+            app:bt_colorActive="#FFFFFF"
+            app:bt_colorInactive="#EC6767"
+            app:bt_icon="@drawable/ic_baseline_home_24"
+            app:bt_padding="@dimen/_3mdp"
+            app:bt_shape="@drawable/follow_btn_bg"
+            app:bt_shapeColor="#EA7676"
+            app:bt_title="Home"
+            app:bt_titlePadding="@dimen/_5mdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/i2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/i2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+
+            app:bt_colorActive="#FFFFFF"
+            app:bt_colorInactive="#CFC842"
+            app:bt_icon="@drawable/ic_baseline_notifications_24"
+            app:bt_padding="@dimen/_3mdp"
+            app:bt_shape="@drawable/follow_btn_bg"
+            app:bt_shapeColor="#D8D143"
+            app:bt_title="Notifications"
+            app:bt_titlePadding="@dimen/_5mdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/i3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/i1"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/i3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+
+            app:bt_colorActive="#FFFFFF"
+            app:bt_colorInactive="#53E649"
+            app:bt_icon="@drawable/ic_baseline_add_24"
+            app:bt_padding="@dimen/_3mdp"
+            app:bt_shape="@drawable/follow_btn_bg"
+            app:bt_shapeColor="#8CE886"
+            app:bt_title="Add"
+            app:bt_titlePadding="@dimen/_5mdp"
+            app:layout_constraintEnd_toStartOf="@+id/i4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/i2"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/i4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+
+            app:bt_colorActive="#FFFFFF"
+            app:bt_colorInactive="#49B4E6"
+            app:bt_icon="@drawable/ic_baseline_search_24"
+            app:bt_padding="@dimen/_3mdp"
+            app:bt_shape="@drawable/follow_btn_bg"
+            app:bt_shapeColor="#89CAE8"
+            app:bt_title="Users"
+            app:bt_titlePadding="@dimen/_5mdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/i5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/i3"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/i5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+
+            app:bt_colorActive="#FFFFFF"
+            app:bt_colorInactive="#E649BA"
+            app:bt_icon="@drawable/ic_baseline_profile_24"
+            app:bt_padding="@dimen/_3mdp"
+            app:bt_shape="@drawable/follow_btn_bg"
+            app:bt_shapeColor="#E388C9"
+            app:bt_title="Profile"
+            app:bt_titlePadding="@dimen/_5mdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/i4"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
